@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abuzar Younas | Portfolio</title>
+    <style>
+        /* CSS Starts Here */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        
+        header { 
+            background: #2c3e50; color: white; padding: 60px 20px; text-align: center; 
+        }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #bdc3c7; }
+
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        
+        section { background: white; padding: 30px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #3498db; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; }
+
+        .skills-list { list-style: none; display: flex; gap: 10px; flex-wrap: wrap; }
+        .skills-list li { background: #3498db; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+
+        .project-card { border-left: 5px solid #2c3e50; padding-left: 15px; margin-bottom: 20px; }
+        .project-card h3 { color: #2c3e50; }
+        .btn { 
+            display: inline-block; margin-top: 10px; padding: 8px 15px; background: #27ae60; 
+            color: white; text-decoration: none; border-radius: 4px; transition: 0.3s;
+        }
+        .btn:hover { background: #219150; }
+
+        footer { text-align: center; padding: 20px; color: #7f8c8d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Abuzar Younas</h1>
+        <p>Frontend Developer & C++ Programmer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm a passionate developer building interactive web experiences and logical software. I love turning ideas into code.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Dev C++</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project-card">
+                <h3>Simple C++ Calculator</h3>
+                <p>A command-line tool for basic arithmetic operations built with Dev C++.</p>
+                <a href="https://github.com/abuzar-younas-codes/CPP-Simple-Calculator" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>HTML/JS Game</h3>
+                <p>An interactive browser-based game using JavaScript logic.</p>
+               <a href="https://abuzar-younas-codes.github.io/Rock-Paper-Scissors/" class="btn">Live Demo</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: abuzaryounasmalikg@gmail.com</p>
+            <p>GitHub: @abuzar-younas-codes</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Abuzar Younas. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
