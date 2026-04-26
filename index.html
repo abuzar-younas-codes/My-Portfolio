@@ -1,89 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abuzar Younas | Portfolio</title>
-    <style>
-        /* CSS Starts Here */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        
-        header { 
-            background: #2c3e50; color: white; padding: 60px 20px; text-align: center; 
-        }
-        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        header p { font-size: 1.2rem; color: #bdc3c7; }
-
-        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-        
-        section { background: white; padding: 30px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid #3498db; display: inline-block; margin-bottom: 20px; padding-bottom: 5px; }
-
-        .skills-list { list-style: none; display: flex; gap: 10px; flex-wrap: wrap; }
-        .skills-list li { background: #3498db; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
-
-        .project-card { border-left: 5px solid #2c3e50; padding-left: 15px; margin-bottom: 20px; }
-        .project-card h3 { color: #2c3e50; }
-        .btn { 
-            display: inline-block; margin-top: 10px; padding: 8px 15px; background: #27ae60; 
-            color: white; text-decoration: none; border-radius: 4px; transition: 0.3s;
-        }
-        .btn:hover { background: #219150; }
-
-        footer { text-align: center; padding: 20px; color: #7f8c8d; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuzar Younas | Portfolio</title>
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+<header>
+    <div class="header-content">
         <h1>Abuzar Younas</h1>
-        <p>Frontend Developer & C++ Programmer</p>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm a passionate developer building interactive web experiences and logical software. I love turning ideas into code.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>C++</li>
-                <li>Dev C++</li>
-                <li>GitHub</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            
-            <div class="project-card">
-                <h3>Simple C++ Calculator</h3>
-                <p>A command-line tool for basic arithmetic operations built with Dev C++.</p>
-                <a href="https://github.com/abuzar-younas-codes/CPP-Simple-Calculator" class="btn">View on GitHub</a>
-            </div>
-
-            <div class="project-card">
-                <h3>HTML/JS Game</h3>
-                <p>An interactive browser-based game using JavaScript logic.</p>
-               <a href="https://abuzar-younas-codes.github.io/Rock-Paper-Scissors/" class="btn">Live Demo</a>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: abuzaryounasmalikg@gmail.com</p>
-            <p>GitHub: @abuzar-younas-codes</p>
-        </section>
+        <p>Beginner Frontend Developer | Learning JavaScript & C++</p>
     </div>
+</header>
 
-    <footer>
-        <p>&copy; 2026 Abuzar Younas. All Rights Reserved.</p>
-    </footer>
+<div class="container">
 
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a beginner developer who enjoys creating simple projects.
+        Currently learning HTML, CSS, JavaScript and C++ step by step.
+    </p>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS Basics</li>
+                <li>Basic Page Layout</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <ul>
+                <li>JavaScript Basics</li>
+                <li>C++ Basics</li>
+                <li>Logic Building</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+                <li>Git Basics</li>
+                <li>GitHub Basics</li>
+                <li>VS Code</li>
+                <li>Dev C++</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Rock Paper Scissors</h3>
+            <p>Simple game made with JavaScript using if else conditions.</p>
+            <a href="https://abuzar-younas-codes.github.io/Rock-Paper-Scissors/" target="_blank" class="btn">Live Demo</a>
+        </div>
+
+        <div class="project-card">
+            <h3>NEON-GEAR Page</h3>
+            <p>Practice page made with HTML and CSS.</p>
+            <button class="btn info-btn" data-project="neon">Project Info</button>
+        </div>
+
+        <div class="project-card">
+            <h3>RGB Calculator</h3>
+            <p>JavaScript project for changing colors on button click.</p>
+            <button class="btn info-btn" data-project="rgb">Project Info</button>
+        </div>
+
+        <div class="project-card">
+            <h3>Login Project</h3>
+            <p>Basic input handling project using JavaScript.</p>
+            <button class="btn info-btn" data-project="login">Project Info</button>
+        </div>
+
+        <div class="project-card">
+            <h3>C++ Calculator</h3>
+            <p>Simple calculator using switch case.</p>
+            <a href="https://github.com/abuzar-younas-codes/CPP-Simple-Calculator" target="_blank" class="btn">Source Code</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Prompt Calculator</h3>
+            <p>My first calculator project using prompt().</p>
+            <button class="btn info-btn" data-project="prompt">Project Info</button>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: abuzaryounasmalikg@gmail.com</p>
+    <p>GitHub: @abuzar-younas-codes</p>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Abuzar Younas | Made with curiosity</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
